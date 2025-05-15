@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  argocd/app-name: xnkm23maq-go
+  janus-idp.io/tekton: xnkm23maq-go
+  backstage.io/kubernetes-id: xnkm23maq-go
+  backstage.io/kubernetes-namespace: tssc-app 
+  app.kubernetes.io/part-of: xnkm23maq-go
+resources:
+  - deployment.yaml
+  - route.yaml
+  - service.yaml
